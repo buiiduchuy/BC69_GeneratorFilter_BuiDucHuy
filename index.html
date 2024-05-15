@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <div class="content d-flex align-items-center justify-content-center p-sm-5 px-1 py-5 ">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-5 pe-md-0 mb-md-0 mb-4">
+            <div class="wrap bg-white rounded-4 p-lg-5 py-lg-4 p-md-3 px-3 py-5">
+              <h3 class="text-center mb-3">EDIT IMAGE</h3>
+              <div class="block__url mb-4">
+                <div class="mb-3">
+                  <input type="text" class="form-control py-4 px-4 rounded-4 bg-white" name="" id="urlImg" placeholder="Url Image"
+                  />
+                </div>
+               <div class="mb-3">
+                <label for="avatar">Choose a profile picture:</label>
+                <input type="file" id="chooseImg" name="" accept="image/png, image/jpeg" />
+               </div>
+                <button class="btn btn-dark btnSubmit w-100">Submit</button>
+              </div>
+              <div class="list_prop">
+                <div class="mb-3">
+                  <label for="" class="form-label">Blur</label>
+                  <input type="range" class="form-control" name="" id="blur" min="0" max="100" value="0"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="" class="form-label">Brightness</label>
+                  <input type="range" class="form-control" name="" id="brightness" min="0" max="100" value="100"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="" class="form-label">Contrast</label>
+                  <input type="range" class="form-control" name="" id="contrast" min="0" max="180" value="100"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="" class="form-label">Grayscale</label>
+                  <input type="range" class="form-control" name="" id="grayscale" min="0" max="100" value="0"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="" class="form-label">Huerotate</label>
+                  <input type="range" class="form-control" name="" id="huerotate" min="0" max="360" value="0"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="" class="form-label">Invert</label>
+                  <input type="range" class="form-control" name="" id="invert" min="0" max="100" value="0"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="" class="form-label">Opacity</label>
+                  <input type="range" class="form-control" name="" id="opacity" min="0" max="100" value="100"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="" class="form-label">Saturate</label>
+                  <input type="range" class="form-control" name="" id="saturate" min="0" max="100" value="10"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="" class="form-label">Sepia</label>
+                  <input type="range" class="form-control" name="" id="sepia" min="0" max="100" value="0"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-7 ps-md-0">
+            <div class="box__img rounded-4 rounded-start-0 overflow-hidden w-100 mb-4">
+              <img src="./img01.jpeg" alt="" id="img" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="box_generate bg-white p-sm-5 p-4 rounded-4 rounded-start-0 position-relative">
+              <div class="prop__css"></div>
+              <span class="copy position-absolute">Click to copy</span>
+              <span class="copied position-absolute">copied</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
